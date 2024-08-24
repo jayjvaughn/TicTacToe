@@ -1,6 +1,11 @@
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
 #container{
-    position: absolute;
-    left: 35%;
     display: flex;
     flex-wrap: wrap;
     width: 400px;
@@ -20,4 +25,24 @@ height: 33.333%;
 .box:hover{
 background-color: #d1d1d1;
 cursor: pointer;
+}
+
+.restartBtn{
+padding: 10px;
+border: none;
+color: white;
+background-color: red;
+border-radius: 5px;
+}
+
+.submitBtn{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(2, 132, 0);
+    border-radius: 5px; 
+}
+
+.infoBar{
+ gap: 5px;
 }

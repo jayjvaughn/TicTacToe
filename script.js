@@ -16,6 +16,7 @@ function createGameBoard(){
         container.appendChild(div1);
     };
 };
+// ISSUES...IF YOU CLICK THE LAST BOX, NO OTHER BOX CAN BE CLICKED !!!
 let player1 = "X";
 let player2 = "O";
 let clicked = 0;
