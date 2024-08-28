@@ -17,11 +17,11 @@ function createGameBoard(){
     };
 };
 // ISSUES...IF YOU CLICK THE LAST BOX, NO OTHER BOX CAN BE CLICKED !!!
-let player1 = "X";
-let player2 = "O";
 let clicked = 0;
 function playRound(e){
-    clickedBox = e.target.id;
+let player1 = "X";
+let player2 = "O";
+clickedBox = e.target.id;
 if(div1.textContent === "" && clicked % 2 !== 0){
     console.log(e.target.id + " was clicked");
     e.target.textContent = player1;
@@ -41,6 +41,28 @@ function clickCounter(){
     });
 };
 clickCounter();
+
+submitBtn = document.querySelector("#submitBtn");
+submitBtn.addEventListener("click", displayNames);
+
+function displayNames(){
+infoBar = document.querySelector(".infoBar");
+player1 = document.querySelector("#playerOne");
+player2 = document.querySelector("#playerTwo");
+
+playerOneNameBox = document.createElement("div");
+playerOneNameBox.classList.add("nameBox");
+infoBar.appendChild(playerOneNameBox);
+
+playerTwoNameBox = document.createElement("div");
+playerTwoNameBox.classList.add("nameBox");
+infoBar.appendChild(playerTwoNameBox);
+
+playerOneNameBox.textContent = player1.value + " is using O";
+playerTwoNameBox.textContent = player2.value + " is using X";;
+}
+
+// Create Game Functionality, which square pattterns = a win
 
 };
 ticTacToeGame();

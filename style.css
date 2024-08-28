@@ -27,7 +27,7 @@ background-color: #d1d1d1;
 cursor: pointer;
 }
 
-.restartBtn{
+#restartBtn{
 padding: 10px;
 border: none;
 color: white;
@@ -35,7 +35,7 @@ background-color: red;
 border-radius: 5px;
 }
 
-.submitBtn{
+#submitBtn{
     padding: 10px;
     border: none;
     color: white;
@@ -44,5 +44,13 @@ border-radius: 5px;
 }
 
 .infoBar{
- gap: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.nameBox{
+    display: flex;
+    font-size: 20px;
 }
