@@ -39,7 +39,7 @@ border-radius: 5px;
     padding: 10px;
     border: none;
     color: white;
-    background-color: rgb(2, 132, 0);
+    background-color: #028400;
     border-radius: 5px; 
 }
 
@@ -53,4 +53,9 @@ border-radius: 5px;
 .nameBox{
     display: flex;
     font-size: 20px;
+}
+
+input{
+    border: solid #028400;
+    border-radius: 5px;
 }
